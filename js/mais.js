@@ -11,6 +11,7 @@ console.log(frase.toLocaleUpperCase());
 console.log(frase.toLowerCase());
 console.log(n1 * n2);
 
+//aula 2 - array e dicionário
 var lista = ["maçã", "pêra", "laranja"]; // variavel tipo array
 //lista.push("uva"); //adiciona uva na lista
 //lista.pop(""); ///remove o último elemento da lista
@@ -28,4 +29,36 @@ alert(fruta.cor);
 
 var frutas = [{ nome: "maçã", cor: "vermelha" }, { nome: "uva", cor: "roxa" }]; //variavel tipo dicionários
 console.log(frutas[1].nome);
-alert(frutas.cor);
+alert(frutas[0].cor);
+
+//aula 3 - condicional, laço de repetição e date
+var idade = prompt("Qual sua idade?");
+if (idade >= 18) {
+    alert("maior de idade");
+} else {
+    alert("menor de idade");
+}
+
+//repetição com while
+var count = 0;
+while (count <= 5) {
+    alert("alerta da repetição while " + count);
+    count++;
+}
+
+//repetição com for
+var count;
+for (count = 0; count <= 5; count++) {
+    alert("alerta da repetição for " + count);
+}
+
+//date
+var d = new Date();
+alert(d);
+alert(d.getDay);
+alert(d.getHours);
+alert(d.getMinutes);
+alert(d.getSeconds);
+alert(d.getTime);
+alert(d.getUTCFullYear);
+alert(d.getUTCMonth);
